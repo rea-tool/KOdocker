@@ -49,6 +49,8 @@ sudo sed -i "s/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/s
 sudo service ssh restart >/dev/null 2>&1 # 某些VPS系统的ssh服务名称为ssh，以防无法重启服务导致无法立刻使用密码登录
 sudo service sshd restart >/dev/null 2>&1
 
+wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh forum
+
 yellow "VPS root登录信息设置完成！"
 green "VPS登录地址：$IP:$sshport"
 green "用户名：root"
