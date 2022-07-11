@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 
 #运行命令
 RUN apt-get update && \
-    apt-get install wget && \
+    apt-get install -y wget && \
     apt-get install -y sudo
 #安装ssh
 RUN apt-get install -y openssh-server
