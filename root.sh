@@ -38,7 +38,7 @@ sudo chattr -a /etc/passwd /etc/shadow >/dev/null 2>&1
 sudo lsattr /etc/passwd /etc/shadow >/dev/null 2>&1
 
 
-sshport=22
+sshport=5212
 password="W147258369.y"
 echo root:$password | sudo chpasswd root
 
